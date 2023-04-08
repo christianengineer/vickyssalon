@@ -1,0 +1,95 @@
+/*******************
+ Box Sizing
+ *******************/
+html {
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    /* Useful for body to fill the viewport */
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+}
+
+/****************************
+   Remove default margin and paddings
+   ****************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/****************************
+   Avoid text overflows
+   ****************************/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*******************
+   Lists
+   *******************/
+ul {
+    list-style: none;
+}
+
+/*******************
+   Forms and buttons
+   *******************/
+input,
+textarea,
+select,
+button {
+    color: inherit;
+    font: inherit;
+    letter-spacing: inherit;
+}
+
+/* I usually expand input and textarea to full-width */
+input[type='text'],
+textarea {
+    width: 100%;
+}
+
+/* More friendly border */
+input,
+textarea,
+button {
+    border: 1px solid gray;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.photos-triple {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.photos-triple img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* object-position: bottom; */
+}
