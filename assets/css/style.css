@@ -77,9 +77,34 @@ button {
     border: 1px solid gray;
 }
 
+.cta-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: cadetblue;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: cadetblue;
+}
+
 .section {
     display: flex;
     flex-direction: column;
+}
+
+.section-header {
+    height: 80vh;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .photos-triple {
