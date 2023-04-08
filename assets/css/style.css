@@ -109,12 +109,16 @@ button {
 
 .photos-triple {
     display: flex;
-    /* flex-wrap: wrap; */
+}
+
+@media screen and (max-width: 900px) {
+    .photos-triple {
+        flex-wrap: wrap;
+    }
 }
 
 .photos-triple img {
     width: 100%;
     height: auto;
     object-fit: cover;
-    /* object-position: bottom; */
 }
